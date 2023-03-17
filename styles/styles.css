@@ -1,0 +1,134 @@
+#header_bg {
+  background-color: #eee;
+}
+#header_bg header {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: aquamarine;
+  height: 70px;
+}
+#header_bg header nav {
+  background-color: #ff0;
+}
+#header_bg header nav a {
+  margin-left: 16px;
+}
+#header_bg header nav a:first-child {
+  margin: 0;
+}
+
+#slide_wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+}
+#slide_wrap .slide_container .slide {
+  display: none;
+}
+#slide_wrap .slide_container .slide1 {
+  display: block;
+}
+#slide_wrap .prev {
+  position: absolute;
+  top: 40%;
+  left: 20px;
+}
+#slide_wrap .next {
+  position: absolute;
+  top: 40%;
+  right: 20px;
+}
+#slide_wrap .pagenation {
+  background: brown;
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  text-align: center;
+}
+#slide_wrap .pagenation a {
+  background: #ccc;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: inline-block;
+  text-indent: -9999px;
+  margin-right: 10px;
+}
+#slide_wrap .pagenation a.active {
+  background: #fff;
+}
+#slide_wrap .pagenation a:last-child {
+  margin: 0;
+}
+
+#gallery_wrap {
+  background: lime;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 1200px;
+  padding: 50px 0;
+}
+#gallery_wrap .gallery {
+  width: 100px;
+  height: 100px;
+}
+#gallery_wrap .gallery img {
+  width: 100%;
+}
+#gallery_wrap .g5 {
+  width: 200px;
+  height: 200px;
+}
+#gallery_wrap .g5 img {
+  width: 100%;
+}
+
+#bnr_wrap {
+  padding: 50px 0;
+  text-align: center;
+  background: #222;
+}
+#bnr_wrap span {
+  color: #fff;
+}
+@media screen and (max-width: 430px) {
+  #bnr_wrap span {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+#card_wrap {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+#card_wrap .card {
+  background: #eee;
+  width: 276px;
+}
+#card_wrap .card .photo {
+  padding: 20px;
+}
+#card_wrap .card .photo img {
+  width: 100%;
+}
+#card_wrap .card h2 {
+  padding: 0 20px;
+  line-height: 1.5;
+}
+#card_wrap .card p {
+  padding: 20px;
+  line-height: 1.5;
+}/*# sourceMappingURL=styles.css.map */
