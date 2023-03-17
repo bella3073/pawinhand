@@ -13,8 +13,10 @@ $padding50:50px 0;
 // @mixin 생성규칙명
 // @include 호출규칭명
 @mixin layout { //컨텐츠 크기+가운데 정렬
-    margin:0 auto;
-    width:1200px;
+    margin:0 auto; overflow-x:hidden;
+    width:calc(100% - 30px);
+    max-width:1200px;
+    min-width:320px;
 }
 @mixin flex-row-between {
     display:flex; flex-flow:row nowrap;
@@ -30,9 +32,9 @@ $padding50:50px 0;
     header {
         @include layout;
         @include flex-row-between;
-        background:aquamarine; height:70px;
+        height:70px;
         h1 {a{img{}}}
-        nav {background-color: #ff0;
+        nav {
             a {
                 margin-left:16px;                
             }
@@ -51,7 +53,7 @@ $padding50:50px 0;
     }//e:slide_container
     .prev {position:absolute; top:40%; left:20px;}
     .next {position:absolute; top:40%; right:20px;}
-    .pagenation {background:brown; position:absolute; width:100%; bottom:50px; text-align: center;
+    .pagenation {position:absolute; width:100%; bottom:50px; text-align: center;
         a {
             background:$page-disable;
             width:16px; height:16px;
@@ -64,7 +66,7 @@ $padding50:50px 0;
         a:last-child {margin:0;}
     }
 }//e:slide_wrap
-#gallery_wrap {background:lime;
+#gallery_wrap {
     @include flex-row-between;
     @include layout;
     padding:$padding50;
@@ -83,10 +85,10 @@ $padding50:50px 0;
     background:$bg2-dark;
     span {
         color:$font-color2-wh;
-        @media screen and (max-width:430px) {
-            display: flex;
-            flex-flow:row wrap;
-        }
+        // @media screen and (max-width:430px) {
+        //     display: flex;
+        //     flex-flow:row wrap;
+        // }
     }
 }//e:#bnr_wrap
 #card_wrap {
@@ -127,3 +129,9 @@ $padding50:50px 0;
     }
 }//e:qa_wrap
 footer {text-align:center; background:$bg2-dark; color:$font-color2-wh; padding:$padding50;}
+
+//media quree
+// @media screen and (max-width:1024px) {
+//     #header_bg {
+//         header {background:coral;}
+// }

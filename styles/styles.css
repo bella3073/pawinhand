@@ -3,16 +3,15 @@
 }
 #header_bg header {
   margin: 0 auto;
-  width: 1200px;
+  overflow-x: hidden;
+  width: calc(100% - 30px);
+  max-width: 1200px;
+  min-width: 320px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  background: aquamarine;
   height: 70px;
-}
-#header_bg header nav {
-  background-color: #ff0;
 }
 #header_bg header nav a {
   margin-left: 16px;
@@ -24,7 +23,10 @@
 #slide_wrap {
   position: relative;
   margin: 0 auto;
-  width: 1200px;
+  overflow-x: hidden;
+  width: calc(100% - 30px);
+  max-width: 1200px;
+  min-width: 320px;
 }
 #slide_wrap .slide_container .slide {
   display: none;
@@ -43,7 +45,6 @@
   right: 20px;
 }
 #slide_wrap .pagenation {
-  background: brown;
   position: absolute;
   width: 100%;
   bottom: 50px;
@@ -66,13 +67,15 @@
 }
 
 #gallery_wrap {
-  background: lime;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  width: 1200px;
+  overflow-x: hidden;
+  width: calc(100% - 30px);
+  max-width: 1200px;
+  min-width: 320px;
   padding: 50px 0;
 }
 #gallery_wrap .gallery {
@@ -98,16 +101,13 @@
 #bnr_wrap span {
   color: #fff;
 }
-@media screen and (max-width: 430px) {
-  #bnr_wrap span {
-    display: flex;
-    flex-flow: row wrap;
-  }
-}
 
 #card_wrap {
   margin: 0 auto;
-  width: 1200px;
+  overflow-x: hidden;
+  width: calc(100% - 30px);
+  max-width: 1200px;
+  min-width: 320px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -132,7 +132,10 @@
 
 #qa_wrap {
   margin: 0 auto;
-  width: 1200px;
+  overflow-x: hidden;
+  width: calc(100% - 30px);
+  max-width: 1200px;
+  min-width: 320px;
   padding: 50px 0;
 }
 #qa_wrap h2 {
