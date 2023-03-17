@@ -116,19 +116,67 @@
 }
 #card_wrap .card {
   background: #eee;
-  width: 276px;
+  width: 23.5%;
+  padding: 30px 20px;
 }
-#card_wrap .card .photo {
-  padding: 20px;
+#card_wrap .card * {
+  padding-bottom: 20px;
+  line-height: 1.3;
 }
 #card_wrap .card .photo img {
   width: 100%;
 }
-#card_wrap .card h2 {
-  padding: 0 20px;
-  line-height: 1.5;
+#card_wrap .card p:last-child {
+  padding: 0;
 }
-#card_wrap .card p {
-  padding: 20px;
-  line-height: 1.5;
+
+#qa_wrap {
+  margin: 0 auto;
+  width: 1200px;
+  padding: 50px 0;
+}
+#qa_wrap h2 {
+  margin-bottom: 20px;
+  font-size: 1.375rem;
+}
+#qa_wrap #qaFrm fieldset {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+#qa_wrap #qaFrm fieldset * {
+  margin-bottom: 16px;
+  border: none;
+  background: #eee;
+  padding: 10px;
+  outline: none;
+}
+#qa_wrap #qaFrm fieldset #user_qa::-moz-placeholder, #qa_wrap #qaFrm fieldset input::-moz-placeholder {
+  color: #000;
+}
+#qa_wrap #qaFrm fieldset #user_qa:-ms-input-placeholder, #qa_wrap #qaFrm fieldset input:-ms-input-placeholder {
+  color: #000;
+}
+#qa_wrap #qaFrm fieldset #user_qa::placeholder,
+#qa_wrap #qaFrm fieldset input::placeholder {
+  color: #000;
+}
+#qa_wrap #qaFrm fieldset #user_qa {
+  padding: 10px;
+  height: 200px;
+  outline: none;
+}
+#qa_wrap #qaFrm fieldset #qa_btn {
+  padding: 20px 0;
+  border: 0;
+  color: #fff;
+  margin: 0;
+  background: #222;
+}
+
+footer {
+  text-align: center;
+  background: #222;
+  color: #fff;
+  padding: 50px 0;
 }/*# sourceMappingURL=styles.css.map */
